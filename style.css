@@ -1,0 +1,104 @@
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Big Shoulders Display", cursive;
+  width: 60%;
+  height: 100vh;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1,
+.card2,
+.card3 {
+  padding: 30px 40px;
+  color: white;
+  border-radius: 3px;
+}
+
+.card1 {
+  background-color: var(--brightOrange);
+}
+.card2 {
+  background-color: var(--darkCyan);
+}
+.card3 {
+  background-color: var(--veryDarkCyan);
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+  margin-bottom: 15px;
+}
+
+.card1 h2,
+.card2 h2,
+.card3 h2 {
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-emphasis: none;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+.learnMore a {
+  padding: 10px 15px;
+  background-color: white;
+  color: none;
+  text-decoration: none;
+  border-radius: 50px;
+  border: none;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  border-width: 10px;
+  border-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .card1 p,
+  .card2 p,
+  .card3 p {
+    margin-bottom: 10px;
+  }
+}
+.card1 a{
+  color:var(--brightOrange);
+}
+
+.card2 a{
+   color:var(--darkCyan) ;
+}
+.card3 a{
+  color:  var(--veryDarkCyan); 
+}
